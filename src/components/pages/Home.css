@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 78pt;
+}
+
+p{
+    font-size: 18pt;
+}
+
+.links{
+    font-size: 18pt;
+    margin-top: 1rem;
+}
