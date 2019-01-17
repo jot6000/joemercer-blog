@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div className='container'>
-        <h1>Welcome</h1>
+        <h1 className='title'>Welcome</h1>
         <p>This blog is intended to house my proffesional portfolio as well as be a home for some of my more artistic endevours.</p>
         <p>Coming here for the first time I recomend you look at the below links first.</p>
         <div className='links'>1.Lorem</div>
