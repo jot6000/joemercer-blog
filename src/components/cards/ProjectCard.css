@@ -1,0 +1,34 @@
+.card-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    justify-items: center;
+    width: auto;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #343434;
+    color: white;
+}
+
+.card-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: #343434;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #343434;
+    color: white;
+}
+
+.divider{
+
+}

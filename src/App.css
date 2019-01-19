@@ -9,7 +9,7 @@
 
 .App-header {
   text-align: center;
-  background-color: #93B7BE;
+  background-color: #343434;
   min-height: 8vh;
   max-height: 8vh;
   display: flex;
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #454545;
+  color: white;
 }
 
 .App-navBar {
@@ -31,8 +31,8 @@
 .Nav-Button {
   flex-grow: 1;
   height: 5vh;
-  background-color: #F1FFFA; /* Green */
-  color: #454545;
+  background-color: #DBBEA1; /* Green */
+  color: #343434;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -42,7 +42,7 @@
 }
 
 .Nav-home {
-  color: #454545;
+  color: white;
   text-align: center;
   text-decoration: none;
   font-size: 36px;
