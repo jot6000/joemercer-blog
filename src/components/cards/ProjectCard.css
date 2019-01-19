@@ -11,9 +11,11 @@
     align-items: center;
     background: #343434;
     color: white;
+    cursor: pointer;
 }
 
 .card-contents{
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,12 +25,17 @@
 
 .card-footer{
     display: flex;
-    flex-direction: column;
     align-items: center;
     background: #343434;
     color: white;
 }
 
-.divider{
-
+button{
+    border: none;
+    text-decoration: underline;
+    background: none;
+    color: white;
+    margin: 5px;
+    margin-left: auto;
+    cursor: pointer;
 }

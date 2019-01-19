@@ -8,7 +8,7 @@ class Projects extends Component {
       <div>
         <h2>Projects</h2>
         <div style={{margin: '20px'}}>
-        <ProjectCard></ProjectCard>
+        <ProjectCard title='Safe NPM'></ProjectCard>
         </div>
       </div>
     );

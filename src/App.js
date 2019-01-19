@@ -3,6 +3,7 @@ import About from './components/pages/About'
 import Home from './components/pages/Home'
 import Posts from './components/pages/Posts'
 import Projects from './components/pages/Projects'
+import ProjectPage from './components/pages/ProjectPage'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/posts" component={Posts} />
             <Route path="/projects" component={Projects} />
+            <Route path="/projects/:projectName" component={ProjectPage} />
           </div>
         </>
       </Router>
