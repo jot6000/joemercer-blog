@@ -4,7 +4,7 @@ import Home from './components/pages/Home'
 import Posts from './components/pages/Posts'
 import Projects from './components/pages/Projects'
 import ProjectPage from './components/pages/ProjectPage'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 
 class App extends Component {
@@ -26,8 +26,10 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/posts" component={Posts} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/projects/:projectName" component={ProjectPage} />
+            <Switch>
+              <Route path="/projects/:projectName" component={ProjectPage} />
+              <Route path="/projects" component={Projects} />
+            </Switch>
           </div>
         </>
       </Router>
