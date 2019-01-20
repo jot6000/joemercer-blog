@@ -17,7 +17,8 @@ class ProjectCard extends Component {
     render() {
         if (this.state.redirect === true) {
             return (
-                <Redirect to={{ pathname: '/projects/SafeNPM', state: { title: 'Safe NPM' } }} push={true}></Redirect>
+                <Redirect to={{ 
+                    pathname: '/projects/SafeNPM',state: { title: 'Safe NPM' } }} push={true}></Redirect>
             )
         }
         else {

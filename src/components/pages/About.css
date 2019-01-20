@@ -3,3 +3,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.aboutText{
+    text-align: center;
+    max-width: 60%;
+}
