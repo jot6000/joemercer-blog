@@ -41,15 +41,15 @@
   transition-duration: 0.4s;
 }
 
+.Nav-Button:hover {
+  background-color: #baa187;
+}
+
 .Nav-home {
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 36px;
-}
-
-.Nav-Button:hover {
-  background-color: rgb(202, 216, 211);
 }
 
 .App-link {
