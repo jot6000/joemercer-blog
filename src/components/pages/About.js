@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './About.css';
+import Footer from '../Footer';
 
 class About extends Component {
     render() {
@@ -7,8 +8,8 @@ class About extends Component {
             <div className='container'>
                 <h1>About</h1>
                 <p className='aboutText'>
-                    From the title of this blog you may have already guessed that my name is Joe Mercer and I am a Juinior Software Engineer.
-                    I started off studying games development through college but decided from the process that I generally enjoyed the programing aspects more than
+                    From the title of this blog you may have already guessed that my name is Joe Mercer and I am a Juinor Software Engineer.
+                    I started off studying games development through college but decided from the process that I generally enjoyed the programming aspects more than
                     the artsy side, and as such, went on to not make games.
                 </p>
                 <p className='aboutText'>
@@ -22,21 +23,7 @@ class About extends Component {
                     have to be Brandon Sanderson, I find his novels to be very addictive and fun to read, and almost always end up falling in love with the worlds he creates.
                     Because of this I will be posting about writing and world building as well as putting my stories up here.
                 </p>
-                <h4>Other Profiles</h4>
-                <div className='profile-footer'>
-                    <div className='profileContainer'>
-                        <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"/>
-                        <a className='link-text' href="https://github.com/jot6000">GitHub</a>
-                    </div>
-                    <div className='profileContainer'>
-                    <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
-                        <a className='link-text' href="https://www.linkedin.com/in/joe-mercer-214145149/">LinkedIn</a>
-                    </div>
-                    <div className='profileContainer'>
-                    <img className='logo' src="https://vignette.wikia.nocookie.net/thedescendants/images/8/85/Wattpad-logo.png/revision/latest?cb=20170710213216"/>
-                        <a className='link-text' href="https://www.wattpad.com/user/JoeMercer0">WattPad</a>
-                    </div>
-                </div>
+                <Footer/>
             </div>
         );
     }

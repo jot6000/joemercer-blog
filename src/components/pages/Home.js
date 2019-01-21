@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+import Footer from '../Footer';
 
 class Home extends Component {
   render() {
@@ -11,6 +12,7 @@ class Home extends Component {
         <div className='links'>1.Lorem</div>
         <div className='links'>2.Ipsum</div>
         <div className='links'>3.Dolar</div>
+        <Footer/>
       </div>
     );
   }
