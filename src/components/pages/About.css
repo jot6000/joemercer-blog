@@ -7,4 +7,28 @@
 .aboutText{
     text-align: center;
     max-width: 60%;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
+.profileContainer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-text{
+    margin-left: 5px;
+    color: #343434;
+    text-decoration: none;
 }
