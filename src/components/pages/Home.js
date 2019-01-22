@@ -12,7 +12,7 @@ class Home extends Component {
         <div className='links'>1.Lorem</div>
         <div className='links'>2.Ipsum</div>
         <div className='links'>3.Dolar</div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

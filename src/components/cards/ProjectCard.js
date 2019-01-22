@@ -24,7 +24,7 @@ class ProjectCard extends Component {
             return (
                 <div className='card-container'>
                     <div className='card-header' onClick={this.handleClick}>
-                        <h2>{this.props.title}</h2>
+                        {this.props.title}
                     </div>
                     <div className='card-contents'>
                         <div style={{ width: '300px' }}>{this.props.preview}</div>

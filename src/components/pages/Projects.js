@@ -14,12 +14,12 @@ class Projects extends Component {
         },
         {
           title: 'Workout Tracker',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
           urlPostfix: 'WorkoutTracker'
         },
         {
           title: 'Productivity Manager',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
           urlPostfix: 'ProductivityManager'
         },
       ]
@@ -28,10 +28,13 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <h2>Projects</h2>
-        <div style={{display:'flex',flexDirection:'row',maxWidth:'100%',justifyContent:'center'}}>
+        <div className='projects-header'>
+          <div>My Projects</div>
+          <div className='subtext'>Use the cards below to find out more and for links to the projects.</div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', justifyContent: 'space-evenly', flexWrap: 'wrap'  }}>
           {this.state.projects.map((project) =>
-            <div style={{ margin: '20px' }}>
+            <div style={{ marginBottom: '25px' }}>
               <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlPostfix}></ProjectCard>
             </div>
           )}

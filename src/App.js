@@ -14,10 +14,10 @@ class App extends Component {
         <>
           <div className="App-header">
             <Link to="/" className="Nav-home">
-              Joe Mercer's React Blog
+              Joe Mercer's Blog
               </Link>
           </div>
-          <div>
+          <div className='vignette-shadow-ex' style={{height:'92vh'}}>
             <div className="App-navBar">
               <Link className="Nav-Button" to="/about">About</Link>
               <Link className="Nav-Button" to="/posts">Posts</Link>

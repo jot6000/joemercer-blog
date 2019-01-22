@@ -9,12 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #343434;
-    color: white;
+    background: #900c3f;
+    color: #ffc300;
     cursor: pointer;
+    font-size: 26px;
 }
 
 .card-contents{
+    font-family: 'Open Sans', sans-serif;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -26,15 +28,15 @@
 .card-footer{
     display: flex;
     align-items: center;
-    background: #343434;
-    color: white;
+    background: #900c3f;
+    color: #ffc300;
 }
 
 .read-more{
     border: none;
     text-decoration: underline;
     background: none;
-    color: white;
+    color: #ffc300;
     margin: 5px;
     margin-left: auto;
     cursor: pointer;
