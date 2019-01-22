@@ -17,8 +17,7 @@ class ProjectCard extends Component {
     render() {
         if (this.state.redirect === true) {
             return (
-                <Redirect to={{ 
-                    pathname: '/projects/SafeNPM',state: { title: 'Safe NPM' } }} push={true}></Redirect>
+                <Redirect to={{ pathname: ('/projects/' + this.props.urlPostfix), state: { title: this.props.title } }} push={true}></Redirect>
             )
         }
         else {
@@ -28,7 +27,7 @@ class ProjectCard extends Component {
                         <h2>{this.props.title}</h2>
                     </div>
                     <div className='card-contents'>
-                        <div style={{ width: '300px' }}>Safe NPM is a project that aimed to solve an issue with NPM packages not doing what they say they they do.</div>
+                        <div style={{ width: '300px' }}>{this.props.preview}</div>
                     </div>
                     <div className='card-footer'>
                         <button className='read-more' onClick={this.handleClick}>Read more</button>
