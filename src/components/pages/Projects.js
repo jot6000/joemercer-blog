@@ -29,7 +29,7 @@ class Projects extends Component {
     return (
       <div>
         <div className='projects-header'>
-          <div>My Projects</div>
+          <div>Projects</div>
           <div className='subtext'>Use the cards below to find out more and for links to the projects.</div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', justifyContent: 'space-evenly', flexWrap: 'wrap'  }}>

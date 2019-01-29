@@ -9,7 +9,6 @@
 
 .App-header {
   text-align: center;
-  background-color: #900c3f;
   min-height: 8vh;
   max-height: 8vh;
   display: flex;
@@ -17,7 +16,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #ffc300;
 }
 
 .App-navBar {
@@ -29,27 +27,23 @@
 }
 
 .Nav-Button {
-  flex-grow: 1;
+  margin: 24px;
   height: 5vh;
-  background-color: #c70039; 
-  color: #ffc300;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-}
-
-.Nav-Button:hover {
-  background-color: #a3002e;
+  color: #444444;
 }
 
 .Nav-home {
-  color: #ffc300;
   text-align: center;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 58px;
+  color:#303030;
+  margin-bottom: 18px;
 }
 
 .App-link {

@@ -6,7 +6,7 @@ class About extends Component {
     render() {
         return (
             <div className='container'>
-                <h1>About</h1>
+                <div className='header'>About</div>
                 <p className='aboutText'>
                     From the title of this blog you may have already guessed that my name is Joe Mercer and I am a Juinor Software Engineer.
                     I started off studying games development through college but decided from the process that I generally enjoyed the programming aspects more than

@@ -1,3 +1,13 @@
+.header{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36pt;
+    margin-bottom: 20px;
+    color: #444444;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -8,4 +18,7 @@
     text-align: center;
     max-width: 60%;
     margin-bottom: 1rem;
+    font-size: 16pt;
+    font-family: 'Open Sans', sans-serif;
+    color:#303030;
 }

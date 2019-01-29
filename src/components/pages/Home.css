@@ -9,10 +9,14 @@ h1.title{
 }
 
 p{
+    font-family: 'Open Sans', sans-serif;
     font-size: 18pt;
 }
 
 .links{
+    font-family: 'Open Sans', sans-serif;
     font-size: 18pt;
     margin-top: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
 }

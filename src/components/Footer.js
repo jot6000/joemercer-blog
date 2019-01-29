@@ -6,7 +6,7 @@ class Footer extends Component {
         return (
             <div className='footer-position'>
                 <div className='divider' />
-                <h4 className='footer-divider'>Other Profiles</h4>
+                <div className='footer-divider'>Other Profiles</div>
                 <div className='profile-footer'>
                     <div className='profileContainer'>
                         <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" />
