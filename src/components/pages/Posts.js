@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Posts.css';
+import PostCard from '../cards/PostCard'
+import Footer from '../Footer';
 
 class Posts extends Component {
   constructor(props) {
@@ -20,7 +22,7 @@ class Posts extends Component {
         },
         {
           title: 'Post 3',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
           urlPostfix: 'Post3',
           date: new Date('2018-01-29 15:38:00'),
         },
@@ -34,9 +36,17 @@ class Posts extends Component {
           <div>Posts</div>
           <div className='subtext'>All blog posts are listed below</div>
         </div>
-        <div>
-          
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ maxWidth: '60%'}}>
+            {this.state.posts.map((posts) =>
+              <div style={{ marginBottom: '25px'}}>
+                <PostCard title={posts.title} preview={posts.preview} urlPostfix={posts.urlPostfix} date={posts.date} />
+                <br />
+              </div>
+            )}
+          </div>
         </div>
+        <Footer />
       </div>
     );
   }

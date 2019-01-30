@@ -1,0 +1,20 @@
+.post-title{
+    flex-grow: 1;
+    font-size: 28px;
+    color: #404040;
+    list-style: circle;
+}
+
+.post-preview{
+    font-family: 'Open Sans', sans-serif;
+    color: #343434;
+}
+
+.post-date{
+    font-family: 'Open Sans', sans-serif;
+    color: #343434;
+}
+
+.post-overview{
+    cursor: pointer;
+}
