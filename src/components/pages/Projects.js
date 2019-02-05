@@ -6,25 +6,29 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: [
-        {
-          title: 'Safe NPM',
-          preview: 'Safe NPM is a project that aimed to solve an issue with NPM packages not doing what they say they they do.',
-          urlPostfix: 'SafeNPM'
-        },
-        {
-          title: 'Workout Tracker',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-          urlPostfix: 'WorkoutTracker'
-        },
-        {
-          title: 'Productivity Manager',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-          urlPostfix: 'ProductivityManager'
-        },
-      ]
+      projects: []
     };
   }
+
+  setProjects(newArray){
+    console.log(newArray)
+    this.setState({projects:newArray})
+  }
+
+  componentDidMount(){
+    var Response;
+    var xhttp = new XMLHttpRequest();
+    var self = this;
+
+    xhttp.open('GET', 'http://localhost:3000/projectPreviews', true);
+    xhttp.onload = function () {
+      Response = JSON.parse(this.response)
+      console.log(Response)
+      self.setProjects(Response)
+    };
+    xhttp.send(null)
+  }
+
   render() {
     return (
       <div>
@@ -33,9 +37,9 @@ class Projects extends Component {
           <div className='subtext'>Use the cards below to find out more and for links to the projects.</div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', justifyContent: 'space-evenly', flexWrap: 'wrap'  }}>
-          {this.state.projects.map((project) =>
+          { this.state.projects.map((project) =>
             <div style={{ marginBottom: '25px' }}>
-              <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlPostfix}></ProjectCard>
+              <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlpostfix}></ProjectCard>
             </div>
           )}
         </div>
