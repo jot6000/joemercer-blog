@@ -26,6 +26,9 @@ class Projects extends Component {
       console.log(Response)
       self.setProjects(Response)
     };
+    xhttp.onerror = function () {
+      console.log('Mission aborted')
+    }
     xhttp.send(null)
   }
 

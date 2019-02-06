@@ -7,27 +7,30 @@ class Posts extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: [
-        {
-          title: 'Post 1',
-          preview: 'Safe NPM is a project that aimed to solve an issue with NPM packages not doing what they say they they do.',
-          urlPostfix: 'Post1',
-          date: new Date('2018-01-29 15:38:00'),
-        },
-        {
-          title: 'Post 2',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-          urlPostfix: 'Post2',
-          date: new Date('2018-01-29 15:38:00'),
-        },
-        {
-          title: 'Post 3',
-          preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-          urlPostfix: 'Post3',
-          date: new Date('2018-01-29 15:38:00'),
-        },
-      ]
+      posts: []
     };
+  }
+  
+  setPosts(newArray) {
+    console.log(newArray)
+    this.setState({ posts: newArray })
+  }
+
+  componentDidMount() {
+    var Response;
+    var xhttp = new XMLHttpRequest();
+    var self = this;
+
+    xhttp.open('GET', 'http://localhost:3000/postPreviews', true);
+    xhttp.onload = function () {
+      Response = JSON.parse(this.response)
+      console.log(Response)
+      self.setPosts(Response)
+    };
+    xhttp.onerror = function () {
+      console.log('Mission aborted')
+    }
+    xhttp.send(null)
   }
   render() {
     return (
@@ -37,10 +40,10 @@ class Posts extends Component {
           <div className='subtext'>All blog posts are listed below</div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <div style={{ maxWidth: '60%'}}>
+          <div style={{ Width: '60%' }}>
             {this.state.posts.map((posts) =>
-              <div style={{ marginBottom: '25px'}}>
-                <PostCard title={posts.title} preview={posts.preview} urlPostfix={posts.urlPostfix} date={posts.date} />
+              <div style={{ marginBottom: '25px' }}>
+                <PostCard title={posts.title} preview={posts.preview} urlPostfix={posts.urlpostfix} date={posts.date} />
                 <br />
               </div>
             )}

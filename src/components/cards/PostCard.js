@@ -7,11 +7,17 @@ class ProjectCard extends Component {
         super(props);
         this.state = {
             redirect: false,
+            dateString: ''
         }
     }
 
     handleClick = () => {
         this.setState({ redirect: true })
+    }
+
+    componentDidMount() {
+        var date = new Date(this.props.date)
+        this.setState({ dateString: date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() })
     }
 
     render() {
@@ -23,11 +29,11 @@ class ProjectCard extends Component {
         else {
             return (
                 <div className='post-overview' onClick={this.handleClick}>
-                    <div style={{display:'flex',flexDirection:'row'}}>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
                         <li className='post-title'>
                             {this.props.title}
                         </li>
-                        <div className='post-date'>{this.props.date.getDate() + '/' + (this.props.date.getMonth() + 1) + '/' + this.props.date.getFullYear()}</div>
+                        <div className='post-date'>{this.state.dateString}</div>
                     </div>
                     <div className='post-preview'>{this.props.preview}</div>
                 </div>
