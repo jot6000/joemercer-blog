@@ -1,30 +1,47 @@
 import React, { Component } from 'react';
-import { Redirect } from "react-router-dom";
+import './ProjectPage.css'
+const ReactMarkdown = require('react-markdown')
 
 class ProjectPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            redirect: false,
+            content: ''
         }
     }
-    handleClick = () => {
-        this.setState({ redirect: true })
+    setContent(newContent) {
+        console.log(newContent)
+        this.setState({ content: newContent.content })
+    }
+
+    componentDidMount() {
+        var Response;
+        var xhttp = new XMLHttpRequest();
+        var self = this;
+
+        xhttp.open('GET', 'http://localhost:3000/projectPage/' + this.props.location.state.urlpostfix, true);
+        xhttp.onload = function () {
+            Response = JSON.parse(this.response)
+            console.log(Response)
+            self.setContent(Response)
+        };
+        xhttp.onerror = function () {
+            console.log('Mission aborted')
+        }
+        xhttp.send(null)
     }
     render() {
-        if (this.state.redirect === true) {
-            return (
-                <Redirect to='/projects' push={true}></Redirect>
-            )
-        }
-        else {
-            return (
-                <div>
-                    <button onClick={this.handleClick}>Back</button>
-                    <div>{this.props.location.state.title}</div>
+        return (
+            <div>
+                <div className='project-page-header'>
+                    {this.props.location.state.title}
                 </div>
-            );
-        }
+                <div className='project-page-content'>
+                    {this.state.content}
+                    <ReactMarkdown>{this.state.content}</ReactMarkdown>
+                </div>
+            </div>
+        );
     }
 }
 
