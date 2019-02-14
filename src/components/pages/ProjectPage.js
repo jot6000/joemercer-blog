@@ -19,7 +19,7 @@ class ProjectPage extends Component {
         var xhttp = new XMLHttpRequest();
         var self = this;
 
-        xhttp.open('GET', 'http://localhost:3000/projectPage/' + this.props.location.state.urlpostfix, true);
+        xhttp.open('GET', 'https://joe-mercer-blog-backend.herokuapp.com/projectPage/' + this.props.location.state.urlpostfix, true);
         xhttp.onload = function () {
             Response = JSON.parse(this.response)
             console.log(Response)

@@ -21,7 +21,7 @@ class Projects extends Component {
     var xhttp = new XMLHttpRequest();
     var self = this;
 
-    xhttp.open('GET', 'http://localhost:3000/projectPreviews', true);
+    xhttp.open('GET', 'https://joe-mercer-blog-backend.herokuapp.com/projectPreviews', true);
     xhttp.onload = function () {
       Response = JSON.parse(this.response)
       console.log(Response)
