@@ -15,17 +15,17 @@ class App extends Component {
           <div className="App-header">
             <Link to="/" className="Nav-home">
               Joe Mercer's Blog
-              </Link>
+            </Link>
           </div>
-          <div className='vignette-shadow-ex' style={{height:'92vh'}}>
+          <div>
             <div className="App-navBar">
               <Link className="Nav-Button" to="/about">About</Link>
-              <div style={{height:'30px',background:'grey',width:'1px'}}/>
+              <div style={{ height: '30px', background: 'grey', width: '1px' }} />
               <Link className="Nav-Button" to="/posts">Posts</Link>
-              <div style={{height:'30px',background:'grey',width:'1px'}}/>
+              <div style={{ height: '30px', background: 'grey', width: '1px' }} />
               <Link className="Nav-Button" to="/projects">Projects</Link>
             </div>
-            <div style={{height:'1px',background:'grey',width:'65vw',marginLeft:'17.5vw'}}/>  
+            <div style={{ height: '1px', background: 'grey', width: '65vw', marginLeft: '17.5vw' }} />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/posts" component={Posts} />

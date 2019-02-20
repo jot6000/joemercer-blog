@@ -12,7 +12,6 @@ class Projects extends Component {
   }
 
   setProjects(newArray){
-    console.log(newArray)
     this.setState({projects:newArray})
   }
 

@@ -37,7 +37,6 @@ class ProjectPage extends Component {
                     {this.props.location.state.title}
                 </div>
                 <div className='project-page-content'>
-                    {this.state.content}
                     <ReactMarkdown>{this.state.content}</ReactMarkdown>
                 </div>
             </div>
