@@ -4,6 +4,7 @@ import Home from './components/pages/Home'
 import Posts from './components/pages/Posts'
 import Projects from './components/pages/Projects'
 import ProjectPage from './components/pages/ProjectPage'
+import PostPage from './components/pages/PostPage'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 
@@ -28,7 +29,10 @@ class App extends Component {
             <div style={{ height: '1px', background: 'grey', width: '65vw', marginLeft: '17.5vw' }} />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/posts" component={Posts} />
+            <Switch>
+              <Route path="/posts/:postName" component={PostPage} />
+              <Route path="/posts" component={Posts} />
+            </Switch>
             <Switch>
               <Route path="/projects/:projectName" component={ProjectPage} />
               <Route path="/projects" component={Projects} />

@@ -40,7 +40,7 @@ class Posts extends Component {
           <div className='subtext'>All blog posts are listed below</div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <div style={{ Width: '60%' }}>
+          <div style={{ width: '50%', maxHeight: '60vh', overflowY:'scroll' }}>
             {this.state.posts.map((posts) =>
               <div style={{ marginBottom: '25px' }}>
                 <PostCard title={posts.title} preview={posts.preview} urlPostfix={posts.urlpostfix} date={posts.date} />

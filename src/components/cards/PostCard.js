@@ -23,7 +23,7 @@ class ProjectCard extends Component {
     render() {
         if (this.state.redirect === true) {
             return (
-                <Redirect to={{ pathname: ('/post/' + this.props.urlPostfix), state: { title: this.props.title } }} push={true}></Redirect>
+                <Redirect to={{ pathname: ('/posts/' + this.props.urlPostfix), state: { title: this.props.title, urlpostfix: this.props.urlPostfix } }} push={true}></Redirect>
             )
         }
         else {
