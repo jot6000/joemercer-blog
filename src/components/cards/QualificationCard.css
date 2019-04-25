@@ -1,0 +1,26 @@
+.education-card{
+    box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2);
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    padding : 10px;
+    width : 30vw;
+    margin : 10px;
+}
+
+.education-title{
+    font-size : 16pt;
+    margin-bottom : 10px;
+}
+
+.education-divider{
+    height : 1px;
+    background : grey;
+    width : 100%;
+}
+
+.education-details{
+    font-size : 12pt;
+    margin-bottom : 10px;
+    font-family : 'Open Sans', sans-serif;
+}
