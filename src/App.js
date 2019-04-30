@@ -12,6 +12,25 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: 
+      {
+        HOME: 'home',
+        ABOUT: 'about',
+        POSTS: 'posts',
+        PROJECTS: 'projects'
+      },
+      currentPage: 'home',
+    }
+  }
+
+  setCurrentPage = (newPage) => {
+    this.setState({currentPage:newPage})
+    console.log(this.state.currentPage)
+  }
+
   render() {
     return (
       <Router>
@@ -23,11 +42,11 @@ class App extends Component {
           </div>
           <div>
             <div className="App-navBar">
-              <Link className="Nav-Button" to="/about">About</Link>
+              <Link className={this.state.currentPage == this.state.page.ABOUT ? "Nav-Button-selected":"Nav-Button"} to="/about" onClick={()=>this.setCurrentPage(this.state.page.ABOUT)}>About</Link>
               <div style={{ height: '30px', background: 'grey', width: '1px' }} />
-              <Link className="Nav-Button" to="/posts">Posts</Link>
+              <Link className={this.state.currentPage == this.state.page.POSTS ? "Nav-Button-selected":"Nav-Button"} to="/posts" onClick={()=>this.setCurrentPage(this.state.page.POSTS)}>Posts</Link>
               <div style={{ height: '30px', background: 'grey', width: '1px' }} />
-              <Link className="Nav-Button" to="/projects">Projects</Link>
+              <Link className={this.state.currentPage == this.state.page.PROJECTS ? "Nav-Button-selected":"Nav-Button"} to="/projects" onClick={()=>this.setCurrentPage(this.state.page.PROJECTS)}>Projects</Link>
             </div>
             <div style={{ height: '1px', background: 'grey', width: '65vw', marginLeft: '17.5vw' }} />
             <Route exact path="/" component={Home} />

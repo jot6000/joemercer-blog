@@ -38,6 +38,22 @@
   color: #444444;
 }
 
+.Nav-Button-selected {
+  margin: 24px;
+  height: 5vh;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  color: #444444;
+}
+
+.Nav-Button:hover {
+  text-decoration: underline;
+}
+
 .Nav-home {
   text-align: center;
   text-decoration: none;
