@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../About.css';
 import Footer from '../../Footer';
 import QualificationCard from '../../cards/QualificationCard';
+import CareerCard from '../../cards/CareerCard';
 
 class Experiance extends Component {
     render() {
@@ -36,6 +37,12 @@ class Experiance extends Component {
                 <div style={{color:"#303030",fontSize:'26pt',marginBottom:'10px'}}>
                     2.Career
                 </div>
+                <CareerCard
+                        title = "Data Capture Solutions"
+                        jobTitle = "Juinior Software Engineer"
+                        date = "October 2017 - October 2018"
+                        location = "Slough, Buckinghamshire"
+                />
                 <Footer />
             </div>
         );

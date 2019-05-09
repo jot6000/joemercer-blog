@@ -1,4 +1,4 @@
-.education-card{
+.experiance-card{
     box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2);
     display : flex;
     flex-direction : column;
@@ -8,18 +8,24 @@
     margin : 10px;
 }
 
-.education-title{
+.experiance-title{
     font-size : 16pt;
     margin-bottom : 10px;
 }
 
-.education-divider{
+.experiance-divider{
     height : 1px;
     background : grey;
     width : 100%;
 }
 
-.education-details{
+.experiance-divider-small{
+    height : 1px;
+    background : grey;
+    width : 40%;
+}
+
+.experiance-details{
     font-size : 12pt;
     margin-bottom : 10px;
     font-family : 'Open Sans', sans-serif;
