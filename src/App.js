@@ -36,7 +36,7 @@ class App extends Component {
       <Router>
         <>
           <div className="App-header">
-            <Link to="/" className="Nav-home">
+            <Link to="/" className="Nav-home" onClick={()=>this.setCurrentPage(this.state.page.HOME)}>
               Joe Mercer's Blog
             </Link>
           </div>
