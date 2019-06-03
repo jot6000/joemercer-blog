@@ -7,7 +7,7 @@ class Intrests extends Component {
         return (
             <div className='container'>
                 <br/>
-                <div className='about-header'>Intrests</div>
+                <div className='about-header'>Interests</div>
                 <br/>
                 <p className='aboutText'>
                     From the title of this blog you may have already guessed that my name is Joe Mercer and I am a Juinor Software Engineer.

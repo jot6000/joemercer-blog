@@ -28,7 +28,7 @@ class About extends Component {
                 </Link>
                 <br/>
                 <Link to='/about/intrests' className='aboutText'>
-                    Personal intrests.
+                    Personal interests.
                 </Link>
                 <Footer/>
             </div>
