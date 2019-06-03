@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Posts.css';
 import PostCard from '../cards/PostCard'
-import Footer from '../Footer';
 
 class Posts extends Component {
   constructor(props) {
@@ -49,7 +48,6 @@ class Posts extends Component {
             )}
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

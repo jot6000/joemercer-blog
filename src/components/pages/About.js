@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './About.css';
-import Footer from '../Footer';
 import { Link } from "react-router-dom";
 
 class About extends Component {
@@ -30,7 +29,6 @@ class About extends Component {
                 <Link to='/about/intrests' className='aboutText'>
                     Personal interests.
                 </Link>
-                <Footer/>
             </div>
         );
     }

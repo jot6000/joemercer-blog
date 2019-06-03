@@ -10,6 +10,7 @@ import Experiance from './components/pages/aboutPages/experiance'
 import Intrests from './components/pages/aboutPages/intrests'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class App extends Component {
     return (
       <Router>
         <>
+        <div style={{height:'86vh'}}>
           <div className="App-header">
             <Link to="/" className="Nav-home" onClick={()=>this.setCurrentPage(this.state.page.HOME)}>
               Joe Mercer's Blog
@@ -65,6 +67,8 @@ class App extends Component {
               <Route path="/projects" component={Projects} />
             </Switch>
           </div>
+        </div>
+        <Footer/>
         </>
       </Router>
     );

@@ -24,7 +24,6 @@ class PersonalStatement extends Component {
                     An ideal job for me would be one that allows me to polish my react skills in a professional environment so that I can learn all the correct ways of doing 
                     the things I have probably been cobbling together with the software equivilant of duct tape and hot glue.
                 </p>
-                <Footer/>
             </div>
         );
     }

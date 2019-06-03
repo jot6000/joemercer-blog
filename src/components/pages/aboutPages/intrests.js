@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../About.css';
-import Footer from '../../Footer';
 
 class Intrests extends Component {
     render() {
@@ -14,7 +13,6 @@ class Intrests extends Component {
                     I started off studying games development through college but decided from the process that I generally enjoyed the programming aspects more than
                     the artsy side, and as such, have not persued games development profesionaly.
                 </p>
-                <Footer/>
             </div>
         );
     }

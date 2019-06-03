@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../About.css';
-import Footer from '../../Footer';
 import QualificationCard from '../../cards/QualificationCard';
 import CareerCard from '../../cards/CareerCard';
 
@@ -38,12 +37,14 @@ class Experiance extends Component {
                     2.Career
                 </div>
                 <CareerCard
-                        title = "Data Capture Solutions"
-                        jobTitle = "Juinior Software Engineer"
-                        date = "October 2017 - October 2018"
-                        location = "Slough, Buckinghamshire"
+                    title = "Data Capture Solutions"
+                    jobTitle = "Juinior Software Engineer"
+                    date = "October 2017 - October 2018"
+                    location = "Slough, Buckinghamshire"
+                    overview = "At DCS I worked to deliver client solutions using an array of kofax technoligies, the job taught me a lot about professionalism and allowed me to gain experiance working with clients and in a proffesional team."
+                    responsibilities = {['Delivering software solutions', 'Supporting clients software issues', 'Working in both a team and independently']}
+                    tech = {['Visual basic', 'Kofax capture', 'Kofax KTM','UIpath','Kapow','SQL']}
                 />
-                <Footer />
             </div>
         );
     }
