@@ -30,3 +30,11 @@
     margin-bottom : 10px;
     font-family : 'Open Sans', sans-serif;
 }
+
+.experiance-more{
+    cursor: pointer;
+}
+
+.experiance-more:hover {
+    text-decoration: underline;
+  }
