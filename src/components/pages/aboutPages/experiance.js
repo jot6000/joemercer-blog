@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../About.css';
 import QualificationCard from '../../cards/QualificationCard';
 import CareerCard from '../../cards/CareerCard';
+import Footer from '../../Footer';
 
 class Experiance extends Component {
     render() {
@@ -10,7 +11,7 @@ class Experiance extends Component {
                 <br />
                 <div className='about-header'>Qualifications and Experiance</div>
                 <br />
-                <div style={{color:"#303030",fontSize:'26pt',marginBottom:'10px'}}>
+                <div style={{color:"black",fontSize:'26pt',marginBottom:'10px'}}>
                     1.Education
                 </div>
                 <div style={{display:'flex',marginBottom:'18px'}}>
@@ -33,7 +34,7 @@ class Experiance extends Component {
                         grade = "10 GCSEs, including English, Maths and Science at grades A*-C"
                     />
                 </div>
-                <div style={{color:"#303030",fontSize:'26pt',marginBottom:'10px'}}>
+                <div style={{color:"black",fontSize:'26pt',marginBottom:'10px'}}>
                     2.Career
                 </div>
                 <CareerCard
@@ -45,6 +46,7 @@ class Experiance extends Component {
                     responsibilities = {['Delivering software solutions', 'Supporting clients software issues', 'Working in both a team and independently']}
                     tech = {['Visual basic', 'Kofax capture', 'Kofax KTM','UIpath','Kapow','SQL']}
                 />
+                <Footer absolute/>
             </div>
         );
     }

@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './Footer.css';
 
 class Footer extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
-            <div className='footer-position'>
-                <div className='divider' />
+            <div className={'footer-position'+(this.props.absolute ? ' footer-pinned-bottom' : '')}>
                 <div className='footer-divider'>Other Profiles</div>
                 <div className='profile-footer'>
                     <div className='profileContainer'>
