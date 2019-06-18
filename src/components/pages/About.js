@@ -11,7 +11,7 @@ class About extends Component {
                     <h1 className='about-title'>About Me</h1>
                     <div style={{display:'flex',flexDirection:'row'}}>
                         <img
-                            src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/50914634_1683641551780030_3386822845244899328_n.jpg?_nc_cat=111&_nc_ht=scontent-lht6-1.xx&oh=30a9c6cf9a897f8aca454a82d7094503&oe=5D06ED78" 
+                            src="https://i.imgur.com/ylzI7Jr.jpg" 
                             alt="avatar"
                             height="300"
                             width="300"
