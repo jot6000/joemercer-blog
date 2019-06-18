@@ -3,15 +3,21 @@ import './ExperianceCards.css';
 
 class QualificationCard extends Component {
     render() {
+        const type = this.props.type;
         return (
-            <div className="experiance-card">
-                <div className="experiance-title">{this.props.title}</div>
+            <article className={"experiance-card "+type+"-body"}>
+                <header className={"experiance-header "+type+"-bar"}>
+                    <div className="experiance-header-title">
+                        <div className="experiance-title">{this.props.title}</div>
+                        <div className="experiance-date">{this.props.date}</div>
+                    </div>
+                    <div className="experiance-location">{this.props.location}</div>
+                </header>
                 <div className="experiance-divider"/>
-                <div className="experiance-details">{this.props.date}</div>
-                <div className="experiance-details">{this.props.location}</div>
-                <div>Grade:</div>
-                <div>{this.props.grade}</div>
-            </div>
+                <footer className={"experiance-footer "+type+"-bar"}>
+                    <div>{this.props.grade}</div>
+                </footer>
+            </article>
         )
     }
 }

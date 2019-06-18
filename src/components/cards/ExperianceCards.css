@@ -1,41 +1,89 @@
 .experiance-card{
-    box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2);
     display : flex;
     flex-direction : column;
-    align-items : center;
-    padding : 10px;
-    width : 30vw;
-    margin : 10px;
-    background: white;
+
+    width : 400px;
+    height : 200px;
+    margin : 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family : 'Open Sans', sans-serif;
+
+    color: white;
+}
+
+.hnd-body{
+    background-image:  url("https://images.unsplash.com/photo-1559701339-4f49d0b07462?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: 100%;
+    background-position: center center;
+}
+
+.hnd-bar{
+    background: rgba(0,58,111,0.9);
+}
+
+.btec-body{
+    background-image:  url("https://images.unsplash.com/photo-1538895194639-f50554a2ca24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1347&q=80");
+    background-size: 100%;
+    background-position: top right;
+}
+
+.btec-bar{
+    background: rgba(0,0,0,0.8);
+}
+
+.gcse-body{
+    background-image:  url("https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+    background-size: 100%;
+}
+
+.gcse-bar{
+    background: rgba(117,37,36,0.8);
+}
+
+.experiance-header{
+    display : flex;
+    flex-direction : column;
+}
+
+.experiance-header-title{
+    display : flex;
+    flex-direction : row;
+}
+
+.experiance-location{
+    text-align: left;
+    font-size: 10pt;
+    margin-left: 5px;
+}
+
+.experiance-date{
+    text-align: right;
+    flex:1;
+    font-size: 11pt;
+    margin: 10px;
 }
 
 .experiance-title{
     font-size : 16pt;
-    margin-bottom : 10px;
+    padding : 5px;
 }
 
 .experiance-divider{
-    height : 1px;
-    background : grey;
-    width : 100%;
+    flex:1;
 }
 
-.experiance-divider-small{
-    height : 1px;
-    background : grey;
-    width : 40%;
-}
-
-.experiance-details{
-    font-size : 12pt;
-    margin-bottom : 10px;
-    font-family : 'Open Sans', sans-serif;
+.experiance-footer{
+    padding : 5px;
 }
 
 .experiance-more{
     cursor: pointer;
+    
 }
 
 .experiance-more:hover {
     text-decoration: underline;
-  }
+}

@@ -9,33 +9,36 @@ class Experiance extends Component {
         return (
             <div className='container'>
                 <br />
-                <div className='about-header'>Qualifications and Experiance</div>
+                <div className='about-header'>Qualifications and Experience</div>
                 <br />
-                <div style={{color:"black",fontSize:'26pt',marginBottom:'10px'}}>
-                    1.Education
+                <div style={{color:"white",fontSize:'26pt',marginBottom:'10px'}}>
+                    Education
                 </div>
-                <div style={{display:'flex',marginBottom:'18px'}}>
+                <div style={{display:'flex',marginBottom:'18px', padding: '0px'}}>
                     <QualificationCard
-                        title = "HND level 5, Games Development"
-                        date = "October 2015 - July 2017"
-                        location = "Uxbridge College, Uxbridge, London"
+                        title = "HND level 5 (Games Dev)"
+                        date = "2015 - 2017"
+                        location = "Uxbridge College"
                         grade = "Distinction"
+                        type = "btec"
                     />
                     <QualificationCard
-                        title = "BTEC level 3 Extended Diploma, Games Development"
-                        date = "September 2013 - June 2015"
-                        location = "Uxbridge College, Uxbridge, London"
+                        title = "BTEC level 3 (Games Dev)"
+                        date = "2013 - 2015"
+                        location = "Uxbridge College"
                         grade = "Distinction*, Distinction, Distinction"
+                        type = "hnd"
                     />
                     <QualificationCard
                         title = "GCSE’s"
-                        date = "September 2011 – June 2013"
-                        location = "Chalfont Community College, Chalfont St Peter, Buckinghamshire"
-                        grade = "10 GCSEs, including English, Maths and Science at grades A*-C"
+                        date = "2011 – 2013"
+                        location = "Chalfont Community College"
+                        grade = "10 GCSEs A*-C (Including English, Maths, and Science)"
+                        type = "gcse"
                     />
                 </div>
-                <div style={{color:"black",fontSize:'26pt',marginBottom:'10px'}}>
-                    2.Career
+                <div style={{color:"white",fontSize:'26pt',marginBottom:'10px'}}>
+                    Career
                 </div>
                 <CareerCard
                     title = "Data Capture Solutions"

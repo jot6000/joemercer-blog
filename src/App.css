@@ -2,13 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .app-background{
-  background: rgba(250,250,250,0.7);
+  background: rgba(0,0,0,0.2);
   min-height: 100vh;
   background-attachment: fixed;
 }
@@ -22,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background: rgba(60,60,60, 0.9);
+  background: rgba(60,60,60, 0.3);
 }
 
 .App-navBar {
@@ -31,7 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(60,60,60, 0.9);
+  background: rgba(60,60,60, 0.3);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .Nav-Button {
@@ -75,7 +71,7 @@
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("https://images.unsplash.com/photo-1489861518096-4d12b732e831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1407&q=80");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;

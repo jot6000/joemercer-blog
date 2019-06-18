@@ -5,12 +5,12 @@
     align-items: center;
     font-size: 36pt;
     margin-bottom: 20px;
-    color: #444444;
+    color: white;
 }
 
 .subtext{
     font-size: 12pt;
     font-family: 'Open Sans', sans-serif;
-    color:#303030;
+    color:white;
     margin-bottom: 1rem;
 }

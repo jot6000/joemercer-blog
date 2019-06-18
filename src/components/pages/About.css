@@ -4,7 +4,37 @@
     flex-direction: column;
     align-items: center;
     font-size: 36pt;
-    color: black;
+    color: white;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    background: rgba(200,200,200,0.1);
+    width: 800px;
+    color:white;
+    box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.about-body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:100px;
+}
+
+.about-title{
+    font-size: 36pt;
+    background: rgba(80,80,80,0.1);
+    margin: 0;
+    padding:1rem;
+}
+
+.about-content{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    padding:16px;
 }
 
 .container{
@@ -18,13 +48,12 @@
 }
 
 .about-links{
-    text-align: center;
-    max-width: 60%;
-    margin-bottom: 1rem;
+    text-align: left;
     font-size: 16pt;
     font-family: 'Open Sans', sans-serif;
-    color:black;
+    color:white;
     text-decoration: none;
+    margin-bottom: 8pt;
 }
 
 .tall-container{
@@ -41,19 +70,19 @@
     text-decoration: underline;
 }
 
+.about-content-text{
+    text-align: left;
+}
+
 .about-text{
     text-align: center;
     max-width: 60%;
     margin-bottom: 1rem;
     font-size: 16pt;
     font-family: 'Open Sans', sans-serif;
-    color:black;
+    color:white;
 }
 
 .personal-statement-text{
     max-width: 30em
-}
-
-.avatar{
-    border-radius: 180px;
 }
