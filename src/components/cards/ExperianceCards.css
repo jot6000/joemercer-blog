@@ -14,6 +14,27 @@
     color: white;
 }
 
+.dcs-body{
+    background-image:  url("../../images/dcs-office.jpg");
+    background-size: 100%;
+    background-position: center center;
+}
+
+.dcs-bar{
+    background: rgba(0,58,111,0.9);
+    color: white;
+}
+
+.dcs-modal{
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 20px;
+}
+
+.dcs-mid-bar{
+    background: rgba(0,0,0,0.5);
+}
+
 .hnd-body{
     background-image:  url("https://images.unsplash.com/photo-1559701339-4f49d0b07462?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     background-size: 100%;
@@ -43,6 +64,11 @@
     background: rgba(117,37,36,0.9);
 }
 
+.experiance-details{
+    font-size: 16pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .experiance-header{
     display : flex;
     flex-direction : column;
@@ -56,7 +82,7 @@
 .experiance-location{
     text-align: left;
     font-size: 10pt;
-    margin-left: 5px;
+    padding-left: 5px;
 }
 
 .experiance-date{
@@ -77,11 +103,13 @@
 
 .experiance-footer{
     padding : 5px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .experiance-more{
     cursor: pointer;
-    
+    font-size: 9pt;
 }
 
 .experiance-more:hover {

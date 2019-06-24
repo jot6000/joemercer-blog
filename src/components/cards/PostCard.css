@@ -1,18 +1,18 @@
 .post-title{
     flex-grow: 1;
     font-size: 28px;
-    color: #404040;
+    color: white;
     list-style: circle;
 }
 
 .post-preview{
     font-family: 'Open Sans', sans-serif;
-    color: #343434;
+    color: white;
 }
 
 .post-date{
     font-family: 'Open Sans', sans-serif;
-    color: #343434;
+    color: white;
 }
 
 .post-overview{

@@ -33,12 +33,7 @@ class Posts extends Component {
   }
   render() {
     return (
-      <div>
-        <div className='posts-header'>
-          <div>Posts</div>
-          <div className='subtext'>All blog posts are listed below</div>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center',padding: '3rem' }}>
           <div className='posts-box'>
             {this.state.posts.map((posts) =>
               <div style={{ marginBottom: '25px' }}>
@@ -48,7 +43,6 @@ class Posts extends Component {
             )}
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -16,18 +16,18 @@ class Experiance extends Component {
                 </div>
                 <div style={{display:'flex',marginBottom:'18px', padding: '0px'}}>
                     <QualificationCard
-                        title = "HND level 5 (Games Dev)"
-                        date = "2015 - 2017"
-                        location = "Uxbridge College"
-                        grade = "Distinction"
-                        type = "btec"
-                    />
-                    <QualificationCard
                         title = "BTEC level 3 (Games Dev)"
                         date = "2013 - 2015"
                         location = "Uxbridge College"
                         grade = "Distinction*, Distinction, Distinction"
                         type = "hnd"
+                    />
+                    <QualificationCard
+                        title = "HND level 5 (Games Dev)"
+                        date = "2015 - 2017"
+                        location = "Uxbridge College"
+                        grade = "Distinction"
+                        type = "btec"
                     />
                     <QualificationCard
                         title = "GCSE’s"
@@ -43,7 +43,7 @@ class Experiance extends Component {
                 <CareerCard
                     title = "Data Capture Solutions"
                     jobTitle = "Juinior Software Engineer"
-                    date = "October 2017 - October 2018"
+                    date = "2017 - 2018"
                     location = "Slough, Buckinghamshire"
                     overview = "At DCS I worked to deliver client solutions using an array of kofax technoligies, the job taught me a lot about professionalism and allowed me to gain experiance working with clients and in a proffesional team."
                     responsibilities = {['Delivering software solutions', 'Supporting clients software issues', 'Working in both a team and independently']}
