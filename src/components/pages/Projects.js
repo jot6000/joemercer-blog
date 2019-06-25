@@ -33,18 +33,12 @@ class Projects extends Component {
 
   render() {
     return (
-      <div>
-        <div className='projects-header'>
-          <div>Projects</div>
-          <div className='subtext'>Use the cards below to find out more and for links to the projects.</div>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', flexWrap: 'wrap',marginLeft:'10vw'}}>
-          { this.state.projects.map((project) =>
-            <div style={{ margin: '25px' }}>
-              <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlpostfix}></ProjectCard>
-            </div>
-          )}
-        </div>
+      <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', flexWrap: 'wrap',marginLeft:'10vw', paddingTop:'3rem'}}>
+        { this.state.projects.map((project) =>
+          <div style={{ margin: '25px' }}>
+            <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlpostfix}></ProjectCard>
+          </div>
+        )}
       </div>
     );
   }

@@ -10,7 +10,7 @@
 .about-container{
     display: flex;
     flex-direction: column;
-    background: rgba(60,60,60,0.2);
+    background: #537b89;
     width: 800px;
     color:white;
     box-shadow : 0 4px 8px 0 rgba(0,0,0,0.6);
@@ -25,7 +25,7 @@
 
 .about-title{
     font-size: 36pt;
-    background: rgba(80,80,80,0.1);
+    background: #c34a4e;
     margin: 0;
     padding: 1rem;
 }

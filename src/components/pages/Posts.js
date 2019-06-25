@@ -36,10 +36,7 @@ class Posts extends Component {
         <div style={{ display: 'flex', justifyContent: 'center',padding: '3rem' }}>
           <div className='posts-box'>
             {this.state.posts.map((posts) =>
-              <div style={{ marginBottom: '25px' }}>
-                <PostCard title={posts.title} preview={posts.preview} urlPostfix={posts.urlpostfix} date={posts.date} />
-                <br />
-              </div>
+              <PostCard title={posts.title} preview={posts.preview} urlPostfix={posts.urlpostfix} date={posts.date} />
             )}
           </div>
         </div>

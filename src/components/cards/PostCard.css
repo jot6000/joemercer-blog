@@ -2,19 +2,28 @@
     flex-grow: 1;
     font-size: 28px;
     color: white;
-    list-style: circle;
+    background: #C34A4E;
+    list-style: square;
+    padding-left:1rem;
+    
 }
 
 .post-preview{
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background: #1a2f3e;
+    padding: 1rem;
 }
 
 .post-date{
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background: #C34A4E;
+    padding: 5px;
 }
 
 .post-overview{
     cursor: pointer;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
 }

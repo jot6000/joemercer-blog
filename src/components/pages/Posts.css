@@ -17,8 +17,7 @@
 
 .posts-box{
     width: 60%;
-    padding-right: 1%;
-    max-height: 60vh;
+    background: '#537B89';
 }
 
 /*Scroll bar styling*/
