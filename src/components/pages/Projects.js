@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.css';
 import ProjectCard from '../cards/ProjectCard'
+import Footer from '../Footer';
 
 class Projects extends Component {
   constructor(props) {
@@ -33,13 +34,16 @@ class Projects extends Component {
 
   render() {
     return (
-      <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', flexWrap: 'wrap',marginLeft:'10vw', paddingTop:'3rem'}}>
-        { this.state.projects.map((project) =>
-          <div style={{ margin: '25px' }}>
-            <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlpostfix}></ProjectCard>
-          </div>
-        )}
-      </div>
+      <>
+        <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '100vw', flexWrap: 'wrap',marginLeft:'10vw', paddingTop:'3rem'}}>
+          { this.state.projects.map((project) =>
+            <div style={{ margin: '25px' }}>
+              <ProjectCard title={project.title} preview={project.preview} urlPostfix={project.urlpostfix}></ProjectCard>
+            </div>
+          )}
+        </div>
+        <Footer absolute={true}/>
+      </>
     );
   }
 }

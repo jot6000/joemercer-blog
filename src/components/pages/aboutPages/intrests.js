@@ -10,7 +10,7 @@ class Intrests extends Component {
                     <br/>
                     <div className='about-header'>Interests</div>
                     <br/>
-                    <p className='aboutText'>
+                    <p className='aboutText' style={{maxWidth: '28em'}}>
                     Outside of software development I enjoy a variety of things. I was an avid gamer in my college days and whilst I still enjoy a good session I now lean more
                     towards board games or arcade style games as opposed to the highly competitive games I used to play. I currently host a bi-weekly board games night with for my friends,
                     and as well as this, I am in the midst of organising more boardgame nights for locals in bucks under the name swajilo games. As well as this I enjoy going to conventions

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ProjectPage.css'
+import Footer from '../Footer';
 const ReactMarkdown = require('react-markdown')
 
 class ProjectPage extends Component {
@@ -39,6 +40,7 @@ class ProjectPage extends Component {
                 <div className='project-page-content'>
                     <ReactMarkdown>{this.state.content}</ReactMarkdown>
                 </div>
+                <Footer/>
             </div>
         );
     }
