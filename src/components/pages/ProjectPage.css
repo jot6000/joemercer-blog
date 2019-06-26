@@ -3,17 +3,18 @@
     flex-direction: column;
     align-items: center;
     font-size: 36pt;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
     color: white;
 }
 
 .project-page-content{
     display: block;
-    max-width: 80vw;
-    font-size: 12pt;
+    max-width: 40vw;
+    font-size: 18pt;
     font-family: 'Open Sans', sans-serif;
     color:white;
     margin-bottom: 1rem;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }

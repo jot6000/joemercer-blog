@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './About.css';
 import { Link } from "react-router-dom";
 import Footer from '../Footer';
+import AboutHeadshot from '../../images/about-headshot.jpg';
 
 class About extends Component {
     render() {
@@ -11,10 +12,9 @@ class About extends Component {
                     <h1 className='about-title'>About Me</h1>
                     <div style={{display:'flex',flexDirection:'row'}}>
                         <img
-                            src="https://i.imgur.com/ylzI7Jr.jpg" 
+                            src = {AboutHeadshot}
                             alt="avatar"
                             height="300"
-                            width="300"
                         />
                         <div className='about-content'>
                             <p className='about-content-text'>

@@ -71,7 +71,7 @@
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1489861518096-4d12b732e831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1407&q=80");
+  background-image: url('./images/websiteBackdrop.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
