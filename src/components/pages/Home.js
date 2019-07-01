@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Home.scss';
 import { Link } from "react-router-dom";
 import Footer from '../Footer';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
-function content1(content){
+function content1(){
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <h1 className='title'>Welcome</h1>
@@ -13,7 +13,7 @@ function content1(content){
   )
 }
 
-function content2(content){
+function content2(){
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <p className='aboutText'>This blog is intended to house my proffesional portfolio as well as be a home for some of my more artistic endevours.</p>
@@ -21,7 +21,7 @@ function content2(content){
   )
 }
 
-function content3(content){
+function content3(){
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <p className='aboutText'>Coming here for the first time! I recomend you look at the below links first:</p>
@@ -78,9 +78,9 @@ decrementContent = () =>{
             <NavigateNextIcon style={{ fontSize: 70, cursor:'pointer', color : this.state.content < 3 ? 'white':'rgba(40,40,40,0.4)'}} onClick={this.incrementContent}/>
           </div>
           <div>
-            <div className={this.state.content === 1 ? 'dot-selected' : 'dot'}/>
-            <div className={this.state.content === 2 ? 'dot-selected' : 'dot'}/>
-            <div className={this.state.content === 3 ? 'dot-selected' : 'dot'}/>
+            <div className='dot' style={this.state.content === 1 ? {transform:'scale(1.6)'} : {transform:'scale(1)'}}/>
+            <div className='dot' style={this.state.content === 2 ? {transform:'scale(1.6)'} : {transform:'scale(1)'}}/>
+            <div className='dot' style={this.state.content === 3 ? {transform:'scale(1.6)'} : {transform:'scale(1)'}}/>
           </div>
         </div>
         <Footer absolute={true}/>
