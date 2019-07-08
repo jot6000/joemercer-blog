@@ -27,10 +27,13 @@
 
 
 .home-content{
-    width:900px;
-    justify-items: center;
+    width:800px;
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 270px;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
 h1.title{
