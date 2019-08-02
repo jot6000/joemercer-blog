@@ -49,7 +49,7 @@ class Experiance extends Component {
                     responsibilities = {['Delivering software solutions', 'Supporting clients software issues', 'Working in both a team and independently']}
                     tech = {['Visual basic', 'Kofax capture', 'Kofax KTM','UIpath','Kapow','SQL']}
                 />
-                <Footer absolute/>
+                <Footer absolute={true}/>
             </div>
         );
     }

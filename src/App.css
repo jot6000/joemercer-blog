@@ -77,3 +77,14 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+
+@media only screen and (max-width: 768px){
+  .Nav-home {
+    font-size: 30px;
+  }
+  body {
+    background-image: url('./images/websiteBackdrop.jpg');
+    background-size: auto;
+    overflow-x: hidden;
+  }
+}
