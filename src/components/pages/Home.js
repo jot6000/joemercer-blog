@@ -66,10 +66,10 @@ decrementContent = () =>{
               <div style={{display:'flex',flexDirection:'column',alignItems:'center',flex:'1'}}>
                 <h1 className='title'>Welcome</h1>
               </div>
-              <div style={{display:'flex',flexDirection:'column',alignItems:'center',flex:'1',marginLeft:'1500px',minWidth:'700px'}}>
+              <div style={{display:'flex',flexDirection:'column',alignItems:'center',flex:'1',marginLeft:'1810px',minWidth:'200px'}}>
                 <p className='aboutText' style={{textAlign:'center'}}>This blog is intended to house my proffesional portfolio as well as be a home for some of my more artistic endevours.</p>
               </div>
-              <div style={{display:'flex',flexDirection:'column',alignItems:'center',flex:'1',marginLeft:'1300px',minWidth:'700px'}}>
+              <div style={{display:'flex',flexDirection:'column',alignItems:'center',flex:'1',marginLeft:'1750px',minWidth:'300px'}}>
                 <p className='aboutText' style={{textAlign:'center'}}>Coming here for the first time! I recomend you look at the below links first:</p>
                 <Link to="/about" className='links'>1. About</Link>
                 <div className='links'>2. Biwegani site</div>

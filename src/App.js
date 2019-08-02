@@ -9,7 +9,7 @@ import PersonalStatement from './components/pages/aboutPages/personalStatement'
 import Experiance from './components/pages/aboutPages/experiance'
 import Intrests from './components/pages/aboutPages/intrests'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor(props) {
